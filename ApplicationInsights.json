@@ -1,82 +1,83 @@
 {
-  "instrumentationSettings": {
-    "connectionString": "InstrumentationKey=00000000-0000-0000-0000-00000000000",
-      "instrumentation": {
-        "logging": {
-          "threshold": "WARN"
-        }
-      },
-      "jmxMetrics": [
-       {
-          "objectName": "java.lang:type=Memory",
-          "attribute": "HeapMemoryUsage.committed",
-          "type": "composite",
-          "display": "Heap Committed"
-        },
-        {
-          "objectName": "java.lang:type=Memory",
-          "attribute": "HeapMemoryUsage.init",
-          "type": "composite",
-          "display": "Heap Init"
-        },
-        {
-          "objectName": "java.lang:type=Memory",
-          "attribute": "HeapMemoryUsage.max",
-          "type": "composite",
-          "display": "Heap Max"
-        },
-        {
-          "objectName": "java.lang:type=Memory",
-          "attribute": "HeapMemoryUsage.used",
-          "type": "composite",
-          "display": "Heap Used"
-        },
-        {
-          "objectName": "java.lang:type=Threading",
-          "attribute": "ThreadCount",
-          "display": "Thread Count"
-        },
-        {
-          "objectName": "java.lang:type=Threading",
-          "attribute": "PeakThreadCount",
-          "display": "Peak Thread Count"
-        },
-        {
-          "objectName": "java.lang:type=Threading",
-          "attribute": "DaemonThreadCount",
-          "display": "Daemon Thread Count"
-        },
-        {
-          "objectName": "java.lang:type=Threading",
-          "attribute": "TotalStartedThreadCount",
-          "display": "Total Started Thread Count"
-        },
-        {
-          "objectName": "java.lang:type=ClassLoading",
-          "attribute": "LoadedClassCount",
-          "display": "Loaded Class Count"
-        },
-        {
-          "objectName": "java.lang:type=ClassLoading",
-          "attribute": "TotalLoadedClassCount",
-          "display": "Total Loaded Class Count"
-        },
-        {
-          "objectName": "java.lang:type=ClassLoading",
-          "attribute": "UnloadedClassCount",
-          "display": "UnLoaded Class Count"
-        },
-        {
-          "objectName": "java.lang:type=GarbageCollector",
-          "attribute": "CollectionTime",
-          "display": "Collection Time"
-        },
-        {
-          "objectName": "java.lang:type=GarbageCollector",
-          "attribute": "LastGcInfo",
-          "display": "Last Gc Info"
-        }
-      ]
-    }
-  }
+   "instrumentationSettings":{
+      "connectionString":"InstrumentationKey=00000000-0000-0000-0000-00000000000",
+      "preview":{
+         "instrumentation":{
+            "logging":{
+               "threshold":"WARN"
+            }
+         },
+         "jmxMetrics":[
+            {
+               "objectName":"java.lang:type=Memory",
+               "attribute":"HeapMemoryUsage.committed",
+               "type":"composite",
+               "display":"Heap Committed"
+            },
+            {
+               "objectName":"java.lang:type=Memory",
+               "attribute":"HeapMemoryUsage.init",
+               "type":"composite",
+               "display":"Heap Init"
+            },
+            {
+               "objectName":"java.lang:type=Memory",
+               "attribute":"HeapMemoryUsage.max",
+               "type":"composite",
+               "display":"Heap Max"
+            },
+            {
+               "objectName":"java.lang:type=Memory",
+               "attribute":"HeapMemoryUsage.used",
+               "type":"composite",
+               "display":"Heap Used"
+            },
+            {
+               "objectName":"java.lang:type=Threading",
+               "attribute":"ThreadCount",
+               "display":"Thread Count"
+            },
+            {
+               "objectName":"java.lang:type=Threading",
+               "attribute":"PeakThreadCount",
+               "display":"Peak Thread Count"
+            },
+            {
+               "objectName":"java.lang:type=Threading",
+               "attribute":"DaemonThreadCount",
+               "display":"Daemon Thread Count"
+            },
+            {
+               "objectName":"java.lang:type=Threading",
+               "attribute":"TotalStartedThreadCount",
+               "display":"Total Started Thread Count"
+            },
+            {
+               "objectName":"java.lang:type=ClassLoading",
+               "attribute":"LoadedClassCount",
+               "display":"Loaded Class Count"
+            },
+            {
+               "objectName":"java.lang:type=ClassLoading",
+               "attribute":"TotalLoadedClassCount",
+               "display":"Total Loaded Class Count"
+            },
+            {
+               "objectName":"java.lang:type=ClassLoading",
+               "attribute":"UnloadedClassCount",
+               "display":"UnLoaded Class Count"
+            },
+            {
+               "objectName":"java.lang:type=GarbageCollector",
+               "attribute":"CollectionTime",
+               "display":"Collection Time"
+            },
+            {
+               "objectName":"java.lang:type=GarbageCollector",
+               "attribute":"LastGcInfo",
+               "display":"Last Gc Info"
+            }
+         ]
+      }
+   }
 }
